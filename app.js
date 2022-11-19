@@ -17,8 +17,8 @@ function operation() {
 	      message: 'Escolha uma opção: ',
 	      choices: [
 	      	'Criar conta',
-		'Fazer login',
-		'Sair'
+			'Fazer login',
+			'Sair'
 	      ],
 	   },
 	]).then((answer) => {
@@ -95,6 +95,7 @@ function validation() {
 	})
 }
 
+// this function is responsible for validate if the login name exists
 function loginValidation() {
 	inquirer.prompt([
 		{
@@ -114,6 +115,7 @@ function loginValidation() {
 	})
 }
 
+// this function is responsible to make the user login on the system
 function login(loginName) {
 	inquirer.prompt([
 		{
